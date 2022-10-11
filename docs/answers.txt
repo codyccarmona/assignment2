@@ -1,0 +1,46 @@
+-Git Lab Tutorials: 10/10/2022
+-GitHub Account Setup: roughly 3 years ago. my first repository was called git_test and created Dec 15, 2020. 
+-GitHub Repository URL: https://github.com/codyccarmona/assignment2
+
+1. My push output is as follows:
+
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 762 bytes | 762.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/codyccarmona/assignment2.git
+   f4975e5..8443fed  master -> master
+
+2. There have been 9 total commits. 6 from Esteban Parra and 3 from me. This was found with "git shortlog -s"
+
+3. README.md was last modified Mon Oct 10 16:02:35 2022 -0400. This was found with "git log README.md"
+
+4. One reason to use branches is because they divide a repository into logical units of work. This adds better organization to the work done in a repository.
+
+   A second reason to use branches is because they allow development to be done without effecting the main branch. This means work done within the branch will not enter
+   the main repository until that work is decidely done, tested, and correct. This also means work for separate features can be done simultaneously.
+
+5. git status lists the current status of the directory. This includes staged files, untracked files, changed files needed to be staged, etc.
+   git log lists the previous statuses of the directory. This includes a history of each file tracked in the repository.
+
+6. git log --all Vehicle.h
+
+7. git log --all --grep='file'
+
+8. (I) Inheritance: give an object properties/methods of another object through a child/parent relationship. "is a" relationship.
+   (II) Polymorphism: occurr in several different forms. This is most commonly presented in overloading
+   (III) Encapsulation: prevent outside modification of internal data
+   
+9. Integration manager workflow has developers pushing to their individual public repositories. Dictator and Lieutenants workflow, on the other hand,
+    has developers pushing to lieutenant repositories - there are no individual repositories.
+
+10. A team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow because it simplifies conflict resolutions.
+      A 100 developers means 100 PRs. This also means a potential 100 merge conflicts. Resolving these would be a nightmare. Furthermore, no conflicts does not mean each push is
+      quality. The central repository is unregulated. 
+
+   In a "“Dictator and Lieutenants” workflow, 100 developers does not necessarily mean 100 PRs. A 100 developers could be pushing to only two lieutenant repos. This alone cuts the
+      potential merge conflicts in half. These lieutenants then push to a dictator repo. At this point, there are only two potential merge conflicts. 
+      Furthermore, a lieutenant repo does not have to accept a PR. If the PR is junk, it can be rejected. Quality control plus reduced potential merge conflicts.    
